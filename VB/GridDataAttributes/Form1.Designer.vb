@@ -1,5 +1,7 @@
-﻿Namespace GridDataAttributes
-    Partial Public Class Form1
+Namespace GridDataAttributes
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -38,23 +40,23 @@
             Me.repositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
             Me.barEditItem1 = New DevExpress.XtraBars.BarEditItem()
             Me.defaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-            DirectCast(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemComboBox1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.repositoryItemTextEdit1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' gridControl1
             ' 
-            Me.gridControl1.Cursor = System.Windows.Forms.Cursors.Default
+            Me.gridControl1.Cursor = System.Windows.Forms.Cursors.[Default]
             Me.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.gridControl1.Location = New System.Drawing.Point(0, 26)
             Me.gridControl1.MainView = Me.gridView1
             Me.gridControl1.Name = "gridControl1"
             Me.gridControl1.Size = New System.Drawing.Size(578, 121)
             Me.gridControl1.TabIndex = 0
-            Me.gridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() { Me.gridView1})
+            Me.gridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridView1})
             ' 
             ' gridView1
             ' 
@@ -63,15 +65,15 @@
             ' 
             ' barManager1
             ' 
-            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() { Me.bar1})
+            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.bar1})
             Me.barManager1.DockControls.Add(Me.barDockControlTop)
             Me.barManager1.DockControls.Add(Me.barDockControlBottom)
             Me.barManager1.DockControls.Add(Me.barDockControlLeft)
             Me.barManager1.DockControls.Add(Me.barDockControlRight)
             Me.barManager1.Form = Me
-            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.barEditItem2, Me.barEditItem3})
+            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.barEditItem2, Me.barEditItem3})
             Me.barManager1.MaxItemId = 8
-            Me.barManager1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() { Me.repositoryItemTextEdit1, Me.repositoryItemComboBox1})
+            Me.barManager1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.repositoryItemTextEdit1, Me.repositoryItemComboBox1})
             ' 
             ' bar1
             ' 
@@ -79,7 +81,7 @@
             Me.bar1.DockCol = 0
             Me.bar1.DockRow = 0
             Me.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-            Me.bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.barEditItem3)})
+            Me.bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.barEditItem3)})
             Me.bar1.OptionsBar.UseWholeRow = True
             Me.bar1.Text = "Tools"
             ' 
@@ -91,12 +93,13 @@
             Me.barEditItem3.Name = "barEditItem3"
             Me.barEditItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.Caption
             Me.barEditItem3.Width = 150
+            AddHandler Me.barEditItem3.EditValueChanged, New System.EventHandler(AddressOf Me.barEditItem3_EditValueChanged)
             ' 
             ' repositoryItemComboBox1
             ' 
             Me.repositoryItemComboBox1.AutoHeight = False
-            Me.repositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.repositoryItemComboBox1.Items.AddRange(New Object() { "Company public info", "Company private info", "Product info"})
+            Me.repositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.repositoryItemComboBox1.Items.AddRange(New Object() {"Company public info", "Company private info", "Product info"})
             Me.repositoryItemComboBox1.Name = "repositoryItemComboBox1"
             ' 
             ' barDockControlTop
@@ -161,31 +164,41 @@
             Me.Controls.Add(Me.barDockControlTop)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.gridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gridView1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.gridControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.gridView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemComboBox1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.repositoryItemTextEdit1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+#End Region
         Private gridControl1 As DevExpress.XtraGrid.GridControl
+
         Private gridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+
         Private barManager1 As DevExpress.XtraBars.BarManager
+
         Private bar1 As DevExpress.XtraBars.Bar
+
         Private barDockControlTop As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlBottom As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlLeft As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlRight As DevExpress.XtraBars.BarDockControl
+
         Private barEditItem1 As DevExpress.XtraBars.BarEditItem
-        Private WithEvents barEditItem3 As DevExpress.XtraBars.BarEditItem
+
+        Private barEditItem3 As DevExpress.XtraBars.BarEditItem
+
         Private repositoryItemComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
+
         Private barEditItem2 As DevExpress.XtraBars.BarEditItem
+
         Private repositoryItemTextEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
+
         Private defaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
     End Class
 End Namespace
-

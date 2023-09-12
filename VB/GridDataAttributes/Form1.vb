@@ -1,17 +1,12 @@
-﻿Imports System
-Imports System.Collections.Generic
+Imports System
 Imports System.ComponentModel
-Imports System.Data
 Imports System.Drawing
-Imports System.Linq
-Imports System.Text
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
 Imports DevExpress.XtraEditors
 Imports DevExpress.XtraGrid.Views.Grid
 
 Namespace GridDataAttributes
-    Partial Public Class Form1
+
+    Public Partial Class Form1
         Inherits XtraForm
 
         Public Sub New()
@@ -27,12 +22,12 @@ Namespace GridDataAttributes
 
         Protected Overrides Sub OnLoad(ByVal e As EventArgs)
             MyBase.OnLoad(e)
-            'gridControl1.DataSource = CompanyProductList.GetSampleData();
-            'companyProductListBindingSource.DataSource = CompanyProductList.GetSampleData();
-            'companyProductBindingSource.DataSource = CompanyProductList.GetSampleData();
+        'gridControl1.DataSource = CompanyProductList.GetSampleData();
+        'companyProductListBindingSource.DataSource = CompanyProductList.GetSampleData();
+        'companyProductBindingSource.DataSource = CompanyProductList.GetSampleData();
         End Sub
 
-        Private Sub barEditItem3_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles barEditItem3.EditValueChanged
+        Private Sub barEditItem3_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)
             Select Case TryCast(barEditItem3.EditValue, String)
                 Case "Company public info"
                     gridControl1.DataSource = GridSampleDataList.GetCompanyPublicInfo()
