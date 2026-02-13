@@ -42,7 +42,7 @@ public class Product {
 * [Data Annotation Attributes](https://docs.devexpress.com/WindowsForms/18273/common-features/data-binding/data-annotation-attributes)
 * [Tutorial: Create and Manage Data in Code and Apply Data Annotation Attributes](https://docs.devexpress.com/WindowsForms/114704/controls-and-libraries/data-grid/getting-started/walkthroughs/data-binding-and-working-with-columns/tutorial-create-and-manage-data-in-code-and-apply-data-annotation-attributes)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-grid-data-annotation-attributes&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-grid-data-annotation-attributes&~~~was_helpful=no)
 
